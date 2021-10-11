@@ -1,18 +1,21 @@
 from win32api import GetKeyState 
-from win32con import VK_CAPITAL 
+from win32con import VK_CAPITAL
 import random
 import string
 from pynput.keyboard import Key, Listener, Controller
-keyboard = Controller()
 
+#-----PARAMETERS-----
+chance = 0.5 #how much chance there is that the letter will be lower case
+#--------------------
+
+keyboard = Controller()
 pressing=[]
 
 def on_press(key):
 	global pressing
 	try:
 		if GetKeyState(VK_CAPITAL) > 0 and key.char in string.ascii_lowercase:
-			print(key)
-			if random.random() > 0.4:
+			if random.random() < chance:
 				pressing.append(True)
 				keyboard.press(Key.backspace)
 				keyboard.release(Key.backspace)
