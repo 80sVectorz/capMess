@@ -4,6 +4,12 @@ import random
 import string
 from pynput.keyboard import Key, Listener, Controller
 
+print("""
+*-------------*
+####CAPmESs####
+*-------------*
+""")
+
 #-----PARAMETERS-----
 chance = 0.5 #how much chance there is that the letter will be lower case
 #--------------------
