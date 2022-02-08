@@ -1,4 +1,6 @@
 # capMess
+**It'S In tHe NaME**
+
 A simple python program that makes the caps lock key randomly switch.
 
 **TESTED ON:**<br>
