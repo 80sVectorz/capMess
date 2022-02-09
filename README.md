@@ -11,7 +11,7 @@ Follow this tutorial with the latest released EXE: [Tutorial](https://support.mi
 To make the EXE from code: [Tutorial](https://datatofish.com/executable-pyinstaller/)
 
 **Dependencies**
-*evdev
-*win32api
-*win32con
-*pyinput
+  * evdev<br>
+  * win32api<br>
+  * win32con<br>
+  * pyinput<br>
